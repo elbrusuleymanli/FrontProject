@@ -1,0 +1,96 @@
+.content {
+  background-color: #fefaf3;
+  .content-info {
+    padding: 30px 0;
+    
+    .customer-company-social {
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        font-family: Montserrat;
+        font-weight: 400;
+       
+
+        li {
+          &:first-child {
+            margin-bottom: 15px;
+             font-size: 12px;
+             font-weight: 500;
+             letter-spacing: 2px;
+          }
+        
+          a {
+            font-size: 12px;
+            color: #8b8b8b;
+            &:hover{
+                color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .archive{
+        display: flex;
+        justify-content: space-evenly;
+    ul{
+        font-family: Montserrat;
+        font-weight: 400;
+        li{
+            &:first-child {
+                margin-bottom: 15px;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 2px;
+              }
+             
+            a{
+                font-size: 12px;
+                color: #8b8b8b;
+                transition: .3s;
+                &:hover{
+                    color: $primary-color;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    }.line{
+            width: 100%;
+            height: 1px;
+            background-color: #eceae1;
+        }
+    .license{
+     margin-top: 20px;
+      text-align: center;
+        .text{
+            color:#afafaf ;
+            font-size: 12px;
+            a{
+              color: #6d6a6a;
+              transition: .3s;
+              &:hover{
+                color: $primary-color;
+                transition: .3s;
+            }
+            }
+        }
+       
+           
+        }
+        .media{
+            a{
+             color: #afafaf;
+             font-size: 10px;
+             letter-spacing: 2px;
+             margin-left: 15px;
+             transition: .3s;
+             &:hover{
+                color: $primary-color;
+                transition: .3s;
+            }
+            }
+        }
+    }
+  }
+
