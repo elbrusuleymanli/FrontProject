@@ -1,0 +1,51 @@
+.parallax {
+  object-fit: cover;
+  .parallax-image {
+    .parallax-window {
+      min-height: 400px;
+      background: transparent;
+      position: relative;
+
+      .subscribe {
+        text-align: center;
+        align-items: center;
+        padding-top: 120px;
+
+        h3 {
+          font-family: playfair display, serif;
+          font-weight: 400;
+          color: white;
+          letter-spacing: 1px;
+          font-size: 30px;
+          padding-bottom: 25px;
+        }
+        .email {
+          input {
+            width: 25%;
+            height: 55px;
+            margin-right: -5px;
+            outline: none;
+            font-size: 12px;
+          }
+          button {
+            height: 55px;
+            width: 10%;
+            outline: none;
+            border: none;
+            background-color: $primary-color;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Montserrat, sans-serif;
+            letter-spacing: 1px;
+            transition: .3s;
+            &:hover{
+                background-color: rgb(238, 44, 10);
+                transition: .3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -536,13 +536,98 @@ li {
   transition: 0.2s;
 }
 
-.banner .banner-image {
-  background-image: url("../../../assets/image/mail-sl-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-origin: content-box;
+.valentine {
+  background-color: #f8f8f8;
+}
+
+.valentine .valentine-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+}
+
+.valentine .valentine-content .valentine-image {
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.valentine .valentine-content .valentine-image a {
+  position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.valentine .valentine-content .valentine-image a:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.valentine .valentine-content .valentine-image a img {
   width: 100%;
-  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.valentine .valentine-content .valentine-image a .play i {
+  position: absolute;
+  top: -40px;
+  left: 280px;
+  color: #f34f3f;
+  padding: 40px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 25px;
+}
+
+.valentine .valentine-content .topic {
+  font-family: playfair display,serif;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+
+.valentine .valentine-content .topic h2 {
+  display: inline;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.valentine .valentine-content .topic span {
+  font-size: 35px;
+  color: #f34f3f;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.valentine .valentine-content .topic .smile {
+  padding-bottom: 25px;
+}
+
+.valentine .valentine-content .topic .smile h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.valentine .valentine-content p {
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.valentine .valentine-content .loves ul li {
+  padding-top: 10px;
+  font-family: Lora,serif;
+  color: #6d6a6a;
+  font-size: 18px;
+}
+
+.valentine .valentine-content .loves ul li i {
+  margin-right: 15px;
+  color: #f34f3f;
 }
 
 .experts .topic {
@@ -579,12 +664,71 @@ li {
   color: #afafaf;
 }
 
+.parallax {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.parallax .parallax-image .parallax-window {
+  min-height: 400px;
+  background: transparent;
+  position: relative;
+}
+
+.parallax .parallax-image .parallax-window .subscribe {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+}
+
+.parallax .parallax-image .parallax-window .subscribe h3 {
+  font-family: playfair display, serif;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.parallax .parallax-image .parallax-window .subscribe .email input {
+  width: 25%;
+  height: 55px;
+  margin-right: -5px;
+  outline: none;
+  font-size: 12px;
+}
+
+.parallax .parallax-image .parallax-window .subscribe .email button {
+  height: 55px;
+  width: 10%;
+  outline: none;
+  border: none;
+  background-color: #f34f3f;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 1px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.parallax .parallax-image .parallax-window .subscribe .email button:hover {
+  background-color: #ee2c0a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .our-blog {
   background-color: #f8f8f8;
+  padding: 30px 0;
 }
 
 .our-blog .topic {
   text-align: center;
+  padding: 50px 0;
 }
 
 .our-blog .topic h2 {
@@ -596,23 +740,30 @@ li {
 .our-blog .topic p {
   font-size: 17px;
   line-height: 29px;
+  padding: 20px 0;
 }
 
 .our-blog .blog-image {
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .our-blog .blog-image img {
   width: 100%;
   -webkit-transition: .3s;
   transition: .3s;
-  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .our-blog .blog-image img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-position: center;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .our-blog .blog-image span {
@@ -631,7 +782,6 @@ li {
   color: #f34f3f;
   -webkit-transition: .3s;
   transition: .3s;
-  cursor: pointer;
 }
 
 .our-blog .about {
@@ -642,6 +792,11 @@ li {
   color: #2b2b2b;
   font-family: playfair display,serif;
   font-weight: 400;
+  margin: 20px 0;
+}
+
+.our-blog .about p {
+  font-size: 15px;
 }
 
 .content {
@@ -757,5 +912,44 @@ li {
   color: #f34f3f;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.mobile {
+  margin: 20px 40px;
+}
+
+.mobile #mainbox {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile .slide-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0px;
+  background-color: whitesmoke;
+  z-index: 1;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.mobile .slide-menu a {
+  padding: 8px 8px 8px 64px;
+  font-size: 20px;
+  display: block;
+}
+
+.mobile .slide-menu a:hover {
+  color: white;
+}
+
+.mobile .slide-menu .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-right: 32px;
 }
 /*# sourceMappingURL=style.css.map */

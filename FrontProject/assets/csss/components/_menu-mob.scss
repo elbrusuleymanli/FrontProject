@@ -1,0 +1,39 @@
+
+.mobile{
+margin: 20px 40px;
+#mainbox{
+    font-size:24px;
+    cursor: pointer;
+}
+.slide-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0px;
+    background-color: whitesmoke;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+
+ a{
+     padding: 8px 8px 8px 64px;
+     font-size: 20px;
+    
+     display: block;
+
+     &:hover{
+         color: white;
+     }
+
+ }
+ .close-btn{
+     position: absolute;
+     top: 0;
+     right: 0px;
+     font-size: 36px;
+     margin-right: 32px;
+ }
+
+}
+}
