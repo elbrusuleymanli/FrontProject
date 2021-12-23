@@ -20,6 +20,7 @@
         &:hover {
           .shop {
             visibility: visible;
+           
             
           }
         }
@@ -88,6 +89,7 @@
             left: -32px;
             padding: 48px 33px;
             background-color: white;
+            z-index: 4;
 
             li {
               line-height: 43px;
@@ -137,6 +139,7 @@
             left: -32px;
             padding: 48px 33px;
 background-color: white;
+z-index: 4;
 
             li {
               line-height: 43px;
@@ -178,12 +181,13 @@ background-color: white;
           display: flex;
           visibility: hidden;
           background-color: white;
+          z-index: 4;
           ul {
             margin-right: 100px;
             display: block;
             padding: 50px 33px;
             font-size: 25px;
-           
+            z-index: 4;
 
             li {
               line-height: 43px;
@@ -228,6 +232,7 @@ background-color: white;
             width: 225px;
             padding: 36px 24px;
             background-color: rgb(255, 255, 255);
+            z-index: 4;
 
             display: block;
             li {
@@ -340,6 +345,7 @@ background-color: white;
             width: 141px;
             padding: 27px 19px;
             background-color: white;
+            z-index: 4;
             li{
               line-height: 30px;
               &:hover a::after {
@@ -398,6 +404,7 @@ background-color: white;
             width: 150px;
             padding: 38px 26px;
             background-color: white;
+            z-index: 4;
            
              li{ color: #737373;
                  line-height: 30px;
