@@ -1,5 +1,6 @@
 .nav {
   padding: 50px;
+  padding-bottom: 20px;
   .logo {
     a {
       img {
@@ -457,10 +458,11 @@ z-index: 4;
   .cart {
     ul {
       display: flex;
-
-      li {
+      position: relative;
+      li{
         margin-left: 20px;
         font-weight: 500;
+        
         &:first-child i:hover {
           color: $primary-color;
           transition: 0.2s;
@@ -471,7 +473,7 @@ z-index: 4;
           letter-spacing: 0.1rem;
           position: relative;
            
-          span{
+          .countProduct{
             background-color: $primary-color;
             color: white;
             border-radius: 100%;
@@ -494,6 +496,9 @@ z-index: 4;
             transition: 0.2s;
           }
         }
+     
+       
+     
       }
     }
   }

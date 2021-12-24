@@ -27,6 +27,7 @@ li {
 
 .nav {
   padding: 50px;
+  padding-bottom: 20px;
 }
 
 .nav .logo a img {
@@ -493,6 +494,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .nav .cart ul li {
@@ -513,7 +515,7 @@ li {
   position: relative;
 }
 
-.nav .cart ul li a span {
+.nav .cart ul li a .countProduct {
   background-color: #f34f3f;
   color: white;
   border-radius: 100%;
@@ -791,6 +793,107 @@ li {
 
 .banner .arrow-prev:hover .next-button::before, .banner .arrow-prev:hover .next-button::after, .banner .arrow-prev:hover .prev-button::before, .banner .arrow-prev:hover .prev-button::after, .banner .arrow-right:hover .next-button::before, .banner .arrow-right:hover .next-button::after, .banner .arrow-right:hover .prev-button::before, .banner .arrow-right:hover .prev-button::after {
   background: #000;
+}
+
+.portfolio .portfolio-menu {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .portfolio-menu ul li {
+  margin-right: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+.portfolio .portfolio-item .item {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.portfolio .portfolio-item .item:hover img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portfolio .portfolio-item .item:hover .addToCart {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item .item:hover .price {
+  visibility: hidden;
+}
+
+.portfolio .portfolio-item .item:hover .currency {
+  visibility: hidden;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portfolio .portfolio-item .name-price {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.portfolio .portfolio-item .name-price p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.portfolio .portfolio-item .name-price .addToCart {
+  color: #afafaf;
+  position: absolute;
+  top: 25px;
+  left: 265px;
+  visibility: hidden;
+}
+
+.portfolio .portfolio-item .name-price .addToCart:hover {
+  color: #f34f3f;
+}
+
+.portfolio .portfolio-item .name-price .price {
+  color: #afafaf;
+  position: absolute;
+  top: 25px;
+  right: 290px;
+  visibility: visible;
+}
+
+.portfolio .portfolio-item .name-price .currency {
+  color: #afafaf;
+  position: absolute;
+  top: 25px;
+  right: 280px;
+  visibility: visible;
 }
 
 .valentine {
