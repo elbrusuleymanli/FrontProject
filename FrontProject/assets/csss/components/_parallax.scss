@@ -1,6 +1,7 @@
 .parallax {
   object-fit: cover;
   .parallax-image {
+    
     .parallax-window {
       min-height: 400px;
       background: transparent;
@@ -48,4 +49,34 @@
       }
     }
   }
+}
+@media only screen and (max-width: 375px) {
+  .parallax{
+    .parallax-image{
+      .parallax-window{
+     
+    .subscribe{
+      h3{
+         font-size: 20px;
+      }
+      .email{
+       position: relative;
+       
+        input{
+          width: 70%;
+        }
+        button{
+          font-size: 12px;
+          width: 40%;
+          position: absolute;
+          top: 82px;
+          left: 101px;
+        }
+      }
+    }
+  }
+    }
+  }
+  
+
 }

@@ -1,103 +1,98 @@
-.banner{
+.banner {
 	position: relative;
-.contents {
-	position: absolute;
-	top: 100px;
-	left: 240px;
-	z-index: 1;
-	width: 500px;
-	height: 400px;
-	h1 {
-		min-width: 347px;
-		max-width: 347px;
-		white-space: normal;
-		font-size: 41px;
-		line-height: 51px;
-		font-weight: 400;
-		color: rgba(0, 0, 0, 1);
-		letter-spacing: 0px;
-        font-family: playfair display,serif;
-        
-		
-		visibility: inherit;
-		transition: none 0s ease 0s;
-		text-align: inherit;
-		border-width: 0px;
-		margin: 0px;
-		padding: 0px;
-		min-height: 103px;
-		max-height: 103px;
-		opacity: 1;
-	}
-	p {
-		min-width: 429px;
-		max-width: 429px;
-		white-space: normal;
-		font-size: 17px;
-		line-height: 29px;
-		font-weight: 400;
-		color: rgb(109, 106, 106);
-		letter-spacing: 0px;
-		
-		visibility: inherit;
-		transition: none 0s ease 0s;
-		text-align: inherit;
-		border-width: 0px;
-		margin-top: 20px;
-		padding: 0px;
-		min-height: 89px;
-		max-height: 89px;
-		opacity: 1;
-        
-	}
-	img {
-		width: 197px;
-		height: 56px;
-		margin-top: 15px;
-       
-	}
-}
-.slider-banner {
-	position: relative;
-	z-index: -1;
-	max-height: 477px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	height: 477px !important;
-	.slider-img {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		width: 100vh;
-		height: 477px;
-		opacity: 1;
-		visibility: inherit;
-		z-index: 20;
-		animation: ZoomEffect 30s linear infinite;
-	}
-	.slider-one {
-		animation: ZoomOutEffect 30s linear infinite;
-	}
-	@keyframes ZoomEffect {
-		0% {
-			transform: scale(1);
+	.contents {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+		z-index: 1;
+		width: 500px;
+		height: 400px;
+		h1 {
+			min-width: 347px;
+			max-width: 347px;
+			white-space: normal;
+			font-size: 41px;
+			line-height: 51px;
+			font-weight: 400;
+			color: rgba(0, 0, 0, 1);
+			letter-spacing: 0px;
+			visibility: inherit;
+			transition: none 0s ease 0s;
+			text-align: inherit;
+			border-width: 0px;
+			margin: 0px;
+			padding: 0px;
+			min-height: 103px;
+			max-height: 103px;
+			opacity: 1;
 		}
-		50% {
-			transform: scale(1.1);
+		p {
+			min-width: 429px;
+			max-width: 429px;
+			white-space: normal;
+			font-size: 17px;
+			line-height: 29px;
+			font-weight: 400;
+			color: rgb(109, 106, 106);
+			letter-spacing: 0px;
+			visibility: inherit;
+			transition: none 0s ease 0s;
+			text-align: inherit;
+			border-width: 0px;
+			margin-top: 20px;
+			padding: 0px;
+			min-height: 89px;
+			max-height: 89px;
+			opacity: 1;
 		}
-		100% {
-			transform: scale(1.2);
+		img {
+			width: 197px;
+			height: 56px;
+			margin-top: 15px;
 		}
 	}
-	@keyframes ZoomOutEffect {
-		0% {
-			transform: scale(1.2);
+	.slider-banner {
+		position: relative;
+		z-index: -1;
+		max-height: 477px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		height: 477px !important;
+		.slider-img {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 100vh;
+			height: 477px;
+			opacity: 1;
+			visibility: inherit;
+			z-index: 20;
+			animation: ZoomEffect 30s linear infinite;
 		}
-		50% {
-			transform: scale(1.1);
+		.slider-one {
+			animation: ZoomOutEffect 30s linear infinite;
 		}
-		100% {
-			transform: scale(1);
+		@keyframes ZoomEffect {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1.2);
+			}
+		}
+		@keyframes ZoomOutEffect {
+			0% {
+				transform: scale(1.2);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
 		}
 	}
 }
@@ -140,7 +135,7 @@
 	top: 50%;
 	right: 10px;
 	width: 50px;
-   
+
 	.next-button {
 		position: relative;
 		display: inline-block;
@@ -164,7 +159,7 @@
 			transition: opacity 0.3s ease-in-out;
 		}
 		&::before {
-			transform: rotate(139deg);
+			transform:rotate(139deg);
 			bottom: 1px;
 			left: 100%;
 		}
@@ -175,14 +170,31 @@
 		}
 	}
 }
-.arrow-prev,.arrow-right{
-    &:hover{
-        .next-button,.prev-button{
-            background: #000;
-            &::before,&::after{
-                background: #000;
-            }
-        }
-    }
+.arrow-prev,
+.arrow-right {
+	&:hover {
+		.next-button,
+		.prev-button {
+			background: #000;
+			&::before,
+			&::after {
+				background: #000;
+			}
+		}
+	}
 }
+
+@media only screen and (max-width:375px) {
+  .banner{
+    overflow: hidden;
+    .contents {
+      
+    
+      p{
+        visibility: hidden;
+      }
+    }
+  }
+  
+  
 }

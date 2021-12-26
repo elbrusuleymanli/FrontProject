@@ -1,4 +1,6 @@
 .experts {
+  margin-top: 100px;
+  margin-bottom: 60px;
   .topic {
     text-align: center;
     h2 {
@@ -33,3 +35,20 @@
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+    .expert-image{
+      .col-lg-3{
+        flex: 0 0 auto;
+    width: 50%;
+      }
+    }
+  }
+ 
+  @media only screen and (max-width: 375px) {
+    .expert-image{
+      .col-lg-3{
+        flex: 0 0 auto;
+    width: 100%;
+      }
+    }
+  }

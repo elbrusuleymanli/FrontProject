@@ -1,0 +1,58 @@
+.sticky-menu {
+    top: -88px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background: #fff;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-timing-function: ease;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+
+}
+.scroll-up {
+  width: 45px;
+  right: 15px;
+  z-index: 5;
+  height: 45px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 45px;
+  background-color: #e3002a;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  i {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  
+    &::before{
+        content: "\f077";
+        color: white;
+    }
+
+}
+}
+// fixed navbar
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 9999999999999;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-timing-function: ease;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+  }

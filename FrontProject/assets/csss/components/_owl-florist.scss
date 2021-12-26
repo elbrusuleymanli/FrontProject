@@ -1,29 +1,94 @@
-#owl-florist {
-  .owl-expert{
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    img{
-         
-    }
-    p{
-      color: #4b4747;
-      font-family: Lora,serif;
-      font-style: italic;
-      font-size: 24px;
-      line-height: 1.5em;
-    }
-    h5{
-      color: #1b1b1b;
-      font-family: Montserrat;
-      font-size: 12px;
-      line-height: 2em;
-      font-weight: 500;
-      letter-spacing: .1em;
-    }
-    span{
+.testmionial {
+	margin-top: 50px;
+	margin-bottom: 60px;
+	.testSlider{
+		position: relative;
+		width: 80%;
+		
+	.sliders-test {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		padding: 0 100px;
+		.img-box {
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		.slider-description {
+			display: inline-block;
+			width: 100%;
+			position: relative;
+			vertical-align: middle;
+			margin-top: 50px;
+			.text {
+				color: #4b4747;
+				
+				font-style: italic;
+				font-size: 24px;
+				line-height: 1.5em;
+				text-align: center;
+				width: 70%;
+				margin: auto;
+			}
+			.about{
+				display: block;
+				text-align: center;
+		.name{
+			display: block;
+		}
+		.professional{
+			color: #4b4747;
+		}
+			}
+		}
+	}
+	.arrow-prev{
+left:100px;
+	}
+	.arrow-right{
+		right:100px;
 
-    }
-  }
+		
+	}
+}
+}
+
+@media only screen and (max-width:375px) {
+	.testmionial {
+		.testSlider{
+			width: 150%;
+			.arrow-prev{
+				visibility: hidden;
+			}
+			.arrow-right{
+				visibility: hidden;
+			}
+			.sliders-test{
+				.img-box{
+					img{
+
+					}
+				}
+				.slider-description{
+					.text{
+						
+				
+				
+				font-size: 20px;
+				
+				
+				width: 110%;
+				
+					}
+				}
+			}
+		}
+	}
+
 }

@@ -27,80 +27,215 @@
   </div>
 
 
-  <div class="mobile">
-    <div id="mainbox">&#9776;</div>
-    <div id="menu-mob" class="slide-menu">
-      <div class="mobile-menu">
-        <ul class="mb-item">
-          <li><a href="">HOME</a><i class="fas fa-chevron-right"></i>
-            <ul class="submenu">
-              <li><a href="">Main Home</a></li>
-              <li><a href="">Grid Home</a></li>
-              <li><a href="">Flower Shop</a></li>
-              <li><a href="">Animated Slider</a></li>
-              <li><a href="">Metro Showcase</a></li>
-              <li><a href="">Carousel Showcase</a></li>
-              <li><a href="">Landing</a></li>
-            </ul>
-          </li>
+ 
+   <!-- mobile version  -->
+   <!-- <div class="mobile-btn">
+    <i class="fas fa-bars"></i>
+  </div> -->
+  <!-- mobile menu -->
+  <!-- <div class="mob-menu">
+    <div class="overlay">
+      <div class="mob-content">
+        <div class="mob-close">
+          <i class="fas fa-times"></i>
+        </div>
+       
+        <nav class="mob-nav">
+          <ul class="navbar-nav">
+            <li class="dropdown">
+              <a href="">Home
+                <div class="nav-dropdown">
+                  <span class="fa fa-angle-down"></span>
+                </div>
+              </a>
+              <ul class="dropdown-menu">
+                <li> <a href="">Home Page 1</a> </li>
+                <li> <a href="">Home Page 2</a> </li>
+                <li> <a href="">Home Page 3</a> </li>
+                <li> <a href="">Home Page 4</a> </li>
 
-        </ul>
-        <ul class="mb-item">
-          <li><a href="">HOME</a><i class="fas fa-chevron-right"></i>
-            <ul class="submenu">
-              <li><a href="">Main Home</a></li>
-              <li><a href="">Grid Home</a></li>
-              <li><a href="">Flower Shop</a></li>
-              <li><a href="">Animated Slider</a></li>
-              <li><a href="">Metro Showcase</a></li>
-              <li><a href="">Carousel Showcase</a></li>
-              <li><a href="">Landing</a></li>
-            </ul>
-          </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li class="dropdown">
+              <a href="">Course</a>
+              <ul class="dropdown-menu">
+                <li><a href="">Course</a></li>
+                <li><a href="">Course Details</a></li>
+              </ul>
+              <div class="nav-dropdown">
+                <span class="fa fa-angle-down"></span>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="">Pages</a>
+              <ul class="dropdown-menu">
+                <li> <a href="">Gallery</a> </li>
+                <li> <a href="">Contact</a> </li>
+                <li> <a href="">Event</a> </li>
+                <li> <a href="">Event Details</a> </li>
+                <li> <a href="">404</a> </li>
+                <li> <a href="">Faq</a> </li>
+              </ul>
+              <div class="nav-dropdown">
+                <span class="fa fa-angle-down"></span>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="">Blog</a>
+              <ul class="dropdown-menu">
+                <li> <a href="">Blog 1</a> </li>
+                <li> <a href="">Blog 2</a> </li>
+                <li> <a href="">Blog Details 1</a> </li>
+                <li> <a href="">Blog Details 2</a> </li>
+              </ul>
+              <div class="nav-dropdown">
+                <span class="fa fa-angle-down"></span>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="">Instructor</a>
+              <ul class="dropdown-menu">
+                <li> <a href="">Instructor</a> </li>
+                <li> <a href="">Instructor Details</a> </li>
+              </ul>
+              <div class="nav-dropdown">
+                <span class="fa fa-angle-down"></span>
+              </div>
+            </li>
+          </ul>
 
-        </ul>
-        <ul class="mb-item">
-          <li><a href="">HOME</a><i class="fas fa-chevron-right"></i>
-            <ul class="submenu">
-              <li><a href="">Main Home</a></li>
-              <li><a href="">Grid Home</a></li>
-              <li><a href="">Flower Shop</a></li>
-              <li><a href="">Animated Slider</a></li>
-              <li><a href="">Metro Showcase</a></li>
-              <li><a href="">Carousel Showcase</a></li>
-              <li><a href="">Landing</a></li>
-            </ul>
-          </li>
-
-        </ul>
+        </nav>
 
       </div>
-      <a href="" class="close-btn">&times;</a>
-
-
-
     </div>
-  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div> -->
 
 
   <header>
+    <div id="mySidenav" class="sidenav d-xl-none">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <ul class="sidenav-list reset-li">
+     <li>
+      <button class="dropdown-btn">Home
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Main Home</a>
+          <a href="#">Grid Home</a>
+          <a href="#">Flower Shop</a>
+          <a href="#">Animated Slider</a>
+          <a href="#">Metro Showcase</a>
+          <a href="#">Carousel Showcase</a>
+          <a href="#">Landing</a>
+          
+        </div>
+     </li>
+     <li>
+      <button class="dropdown-btn">Pages
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">FAG Page</a>
+          <a href="#">Contact Us</a>
+        </div>
+     </li>
+     <li>
+      <button class="dropdown-btn">Shop
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">Product Types
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Pages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Types
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Layouts
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+        </div>
+     </li>
+     <li>
+      <button class="dropdown-btn">Portfolio
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">FAG Page</a>
+          <a href="#">Contact Us</a>
+        </div>
+     </li>
+     <li>
+      <button class="dropdown-btn">Blog
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">FAG Page</a>
+          <a href="#">Contact Us</a>
+        </div>
+     </li>
+     <li>
+      <button class="dropdown-btn">Elements
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">FAG Page</a>
+          <a href="#">Contact Us</a>
+        </div>
+     </li>
+     </ul>
+    </div>
     <section id="header aos">
       <div class="header ">
         <div class="nav">
@@ -304,13 +439,18 @@
                         <span class="countProduct">0</span></a></li>
                     <li><a href=""> CART</a>
                       <span>($</span>
-                    <span class="totalPrice">0</span>
-                    <span>)</span>
-                   
+                      <span class="totalPrice">0</span>
+                      <span>)</span>
+
                     </li>
                   </ul>
                 </div>
               </div>
+              <div class="sidebar-button d-xl-none" style="position: relative;">
+                <i  onclick="openNav()" style="position: absolute;
+                top: -19px;
+                right: 60px;" class="fas fa-bars"></i>
+            </div>
             </div>
           </div>
         </div>
@@ -319,43 +459,45 @@
   </header>
   <main>
 
-    <section class="banner aos">
+    <section class="banner">
       <div class="container-fluid p-0">
-        <div class="row">
-          <div class="contents">
-            <h1>Send <span style="color: red;">flowers</span> like you mean it</h1>
-            <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
-              make it special cursus a sit amet mauris. </p>
-            <img src="assets/image/sign.png" alt="">
+          <div class="row">
+              <div class="contents">
+                  <h1>Send <span style="color:red">flowers</span> like you mean it</h1>
+                  <p class="d-none d-md-block">Where flowers are our inspiration to create lasting memories.
+                      Whatever the occasion, our
+                      flowers will make it special cursus a sit amet mauris. </p>
+                  <img src="/assets/image/sign.png" alt="">
+              </div>
+
+              <div class="slider-banner">
+
+                  <div class="slider-one slider-img"
+                      style="background-image: url(assets/image/mail-sl-1.jpg);">
+
+                  </div>
+                  <div class="slider-img"
+                      style="background-image: url(/assets/image/main-sl-2.jpg);">
+                  </div>
+                  <div class="slider-img"
+                      style="background-image: url(/assets/image/mail-sl-3.jpg);">
+
+                  </div>
+              </div>
+              <div class="arrow-button d-none d-xl-block d-flex">
+                  <div class="arrow-prev">
+                      <span class="prev-button"></span>
+                  </div>
+                  <div class="arrow-right">
+                      <span class="next-button"></span>
+                  </div>
+              </div>
           </div>
-
-          <div class="slider-banner">
-
-            <div class="slider-one slider-img"
-              style="background-image: url(assets/image/mail-sl-1.jpg);  background-position: center;">
-
-            </div>
-            <div class="slider-img"
-              style="background-image: url(assets/image/main-sl-2.jpg);background-position: center;">
-            </div>
-            <div class="slider-img"
-              style="background-image: url(assets/image/mail-sl-3.jpg);background-position: center;">
-
-            </div>
-          </div>
-          <div class="arrow-button d-flex">
-            <div class="arrow-prev">
-              <span class="prev-button"></span>
-            </div>
-            <div class="arrow-right">
-              <span class="next-button"></span>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
     <section class="portfolio aos">
-      <div class="container">
+      <div class="container"> 
+        
         <div class="portfolio-menu">
           <ul>
             <li class="active" data-filter="*">ALL</li>
@@ -366,110 +508,160 @@
             <li data-filter=".various">VARIOUS</li>
             <li data-filter=".winter">WINTER</li>
           </ul>
+         
         </div>
-       
-        <div class="portfolio-item">
-          <div class="row">
-             <div class="col-lg-4">
- <div class="item cactuses">
+        <div class="row">
+          <div class="portfolio-item">
 
-            <img src="assets/image/01.jpg" alt="">
+            <div class="col-lg-3 col-md-4 col-sm-12 item cactuses">
+             
 
-            <div class="name-price">
-              <p>MAJESTY PALM</p>
-              <span class="addToCart" data-id = "1">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-          </div>
+                <div class="img-box">
+                  <img src="assets/image/01.jpg" alt="">
+                </div>
 
-
-             </div>
-             <div class="col-lg-4">
-               <div class="item exotic">
-            <img src="/assets/image/05.jpg" alt="">
-            <div class="name-price">
-              <p>MAJESTY PALM</p>
-              <span class="addToCart" data-id = "2">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-          </div>
-             </div>
-             <div class="col-lg-4">
-                <div class="item greens">
-            <img src="assets/image/02.jpg" alt="">
-            <div class="name-price">
-              <p>MAJESTY PALM</p>
-              <span class="addToCart" data-id = "3">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-          </div>
-             </div>
-             <div class="col-lg-4">
-               <div class="item popular">
-            <img src="assets/image/03.jpg" alt="">
-            <div class="name-price">
-              <p>FOXGLOVE FLOWER</p>
-              <span class="addToCart"data-id = "4">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-          </div>
-             </div>
-             <div class="col-lg-4">
-               <div class="item various">
-            <img src="assets/image/04.jpg" alt="">
-            <div class="name-price">
-              <p>SWEET ALYSSUM</p>
-              <span class="addToCart" data-id = "5">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-          </div>
-             </div>
-             <div class="col-lg-4">
-              <div class="item winter">
-                <img src="assets/image/07.jpg" alt="">
-                <div class="name-price">
-                  <p>SPRING SNOWFLAKE</p>
-                  <span class="addToCart" data-id = "6">Add to cart</span>
+                <div class="name">
+                  <p>SCARLET SAGE</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
                   <span class="currency">$</span>
                   <span class="price">259</span>
-                </div>
-    
-    
-    
-    
-                </div>
-             </div>
-             <div class="col-lg-4">
-                <div class="item winter">
-            <img src="assets/image/07.jpg" alt="">
-            <div class="name-price">
-              <p>SPRING SNOWFLAKE</p>
-              <span class="addToCart" data-id = "6">Add to cart</span>
-              <span class="currency">$</span>
-              <span class="price">259</span>
-            </div>
-
-
+               
+              </div>
+             
 
 
             </div>
-             </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item exotic">
+              <div>
+                <div class="img-box">
+                  <img src="/assets/image/03.jpg" alt="">
+               
+                </div>
+                
+                <div class="name">
+                  <p>SWEET ALYSSUM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item exotic">
+              <div>
+                <div class="img-box">
+                  <img src="/assets/image/03.jpg" alt="">
+               
+                </div>
+                
+                <div class="name">
+                  <p>ROCK SOAPWORT</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12 item greens">
+              
+                <div class="img-box">
+                  <img src="assets/image/04.jpg" alt="">
+                </div>
+                <div class="name">
+                  <p>MAJESTY PALM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+             
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item popular">
+             
+                <div class="img-box">
+                  <img src="assets/image/05.jpg" alt="">
+                </div>
+                <div class="name">
+                  <p>MAJESTY PALM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+             
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item various">
+             
+                <div class="img-box">
+                  <img src="assets/image/06.jpg" alt="">
+                </div>
+                <div class="name">
+                  <p>MAJESTY PALM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+              
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item winter">
+             
+                <div class="img-box">
+                  <img src="assets/image/07.jpg" alt="">
+                </div>
+                <div class="name">
+                  <p>MAJESTY PALM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+
+
+
+
+             
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 item winter">
+              
+                <div class="img-box">
+                  <img src="assets/image/08.jpg" alt="">
+                </div>
+                <div class="name">
+                  <p>MAJESTY PALM</p>
+                    </div>
+                    <div class="order">
+                  <span class="addToCart" data-id="1">Add to cart</span>
+                  <span class="currency">$</span>
+                  <span class="price">259</span>
+               
+              </div>
+
+
+
+
+             
+            </div>
           </div>
-          
-         
-         
-          
-         
-          
-          
-         
-          </div>
+
         </div>
+      </div>
     </section>
 
 
@@ -488,7 +680,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 text">
                 <div class="topic">
                   <h2>Surprise Your</h2><span>Valentine!</span>
                   <div class="smile">
@@ -573,7 +765,7 @@
 
       </div>
     </section>
-    <section id="blog aos">
+    <section id="blog aos" class="section-style">
       <div class="our-blog">
         <div class="topic">
           <h2>From our Blog</h2>
@@ -617,45 +809,56 @@
 
       </div>
     </section>
-    <section id="owl-florist">
+    <section class="testmionial section-style">
       <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="owl-expert">
-                <img src="/assets/image/owl1.png" class="d-block" style="text-align: center;" alt="...">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Aenean commodo ligula eget.</p>
-
-                <h5>Anna Barnes</h5>
-                <span>Florist</span>
+          <div class="row d-flex justify-content-center">
+             <div class="testSlider">
+              <div class="sliders-test">
+                  <div class="col-lg-8">
+                      <div class="testmionial-slider">
+                          <div class="img-box">
+                              <img src="/assets/image/owl1.png" alt="">
+                          </div>
+                          <div class="slider-description">
+                              <p class="text">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+                                  dapibus lingua. </p>
+                              <span class="about">
+                                  <span class="name"> Anna Barnes</span>
+                                  <span class="profession">Florist</span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-8">
+                      <div class="testmionial-slider">
+                          <div class="img-box">
+                              <img src="/assets/image/owl2.png" alt="">
+                          </div>
+                          <div class="slider-description">
+                              <p class="text">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+                                  dapibus lingua. </p>
+                              <span class="about">
+                                  <span class="name"> Jasmine White</span>
+                                  <span class="profession">Florist</span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="owl-expert">
-                <img src="/assets/image/owl2.png" class="d-block" style="text-align: center;" alt="...">
-                <p>Nullam dictum felis eu pede mollis pretium. Integer <br> tincidunt. Cras dapibus lingua. <br> Aenean
-                  commodo ligula eget.</p>
-
-                <h5>Jasmine White</h5>
-                <span>Florist</span>
+              <div class="arrow-button d-flex">
+                  <div class="arrow-prev">
+                      <span class="prev-button"></span>
+                  </div>
+                  <div class="arrow-right">
+                      <span class="next-button"></span>
+                  </div>
               </div>
-            </div>
-
+             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
       </div>
-      </div>
-    </section>
+  </section>
+
 
   </main>
   <footer id="aos">
@@ -742,7 +945,12 @@
   </footer>
   </div>
 
-
+ <!-- scroll -->
+ <div class="scroll">
+  <a class="scroll-up" href="">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+</div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

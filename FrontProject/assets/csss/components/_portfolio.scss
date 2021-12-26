@@ -1,7 +1,9 @@
 .portfolio {
+  margin-bottom: 50px;
+   margin-top: 60px;
   .portfolio-menu {
-    margin-top: 60px;
-    margin-bottom: 20px;
+  
+   
     ul {
       display: flex;
       li {
@@ -17,12 +19,11 @@
   }
   .portfolio-item {
     display: flex;
-    margin-left: 25px;
+    padding: 0;
 
     .item {
-      
       margin-top: 20px;
-      padding-right: 30px;
+
       &:hover {
         img {
           transform: scale(1.03);
@@ -32,56 +33,92 @@
         .addToCart {
           visibility: visible;
           cursor: pointer;
+
+          &:hover{
+            color: $primary-color;
+
+            
+          }
         }
         .price {
           visibility: hidden;
         }
-        .currency{
+        .currency {
           visibility: hidden;
         }
       }
     }
 
-    img {
+    .img-box {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+      height: 100%;
       width: 100%;
-      display: flex;
-      transition: all 0.3s;
+      img {
+        z-index: 2;
+        transition: all 0.3s ease;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+      }
     }
 
-    .name-price {
+    .name {
       text-align: center;
-      position: relative;
+      
       margin-bottom: 10px;
       p {
         margin: 0;
         margin-top: 10px;
       }
-
-      .addToCart {
-        color: #afafaf;
-        position: absolute;
-        top: 25px;
-        left: 265px;
-        visibility: hidden;
-
-        &:hover {
-          color: $primary-color;
-        }
-      }
-      .price {
-        color: #afafaf;
-        position: absolute;
-        top: 25px;
-        right: 290px;
-        visibility: visible;
+ }
+ 
+     .order{
+       text-align: center;
+       position: relative;
+      .addToCart{
+         position: absolute;
+         top: 0;
+         left: 120px;
+         visibility: hidden;
       }
       .currency{
-        color: #afafaf;
-        position: absolute;
-        top: 25px;
-        right: 280px;
+         visibility: visible;
+      }
+      .price{
         visibility: visible;
       }
-    }
+      
+     }
+   
   }
 }
+@media only screen and (max-width: 1024px) {
+.portfolio-item{
+  .col-lg-3{
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+
+
+
+}
+@media only screen and (max-width: 375px) {
+  .portfolio-menu{
+    display: none;
+  }
+  .portfolio-item{
+    .col-lg-3{
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+ 
+
+
+  
+}
+

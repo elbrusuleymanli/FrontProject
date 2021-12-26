@@ -86,3 +86,62 @@
   }
  
 }
+@media only screen and (max-width: 1024px) {
+  .valentine{
+   overflow-x: hidden;
+     .valentine-content{
+  display: block;
+  margin-left: 90px;
+  .col-lg-6{
+    flex: 0 0 auto;
+    width: 80%;
+  }
+  .topic{
+    padding-top: 40px;
+  }
+}
+  }
+ 
+
+}
+@media only screen and (max-width: 375px) {
+  .valentine{
+
+     .valentine-content{
+  display: block;
+
+  .col-lg-6{
+    flex: 0 0 auto;
+    width: 100%;  
+    padding-right: 180px;
+  }
+  
+     .topic{
+    padding-top: 40px;
+    padding-left: 0;
+  h2{
+    font-size: 25px;
+  }
+  span{
+    font-size: 25px;
+  }
+  .smile{
+    h3{
+      font-size: 25px;
+    }
+  }
+  p{
+    padding-left: 0;
+    font-size: 15px;
+    
+  }
+  }
+
+    
+  }
+  }
+ 
+}
+  
+ 
+

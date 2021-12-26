@@ -1,0 +1,223 @@
+.accordion {
+  .acc-topic {
+    background-color: rgb(243, 235, 235);
+    padding: 0;
+    h1 {
+      color: black;
+      font-family: "Playfair Display", serif;
+      padding: 80px 0;
+      font-weight: 400;
+    }
+  }
+
+  .tab {
+    margin-top: 100px;
+    ul {
+      padding-left: 0;
+      .acc.active {
+        .schedule {
+          background-color: $primary-color;
+
+          .schedule-text {
+            color: white;
+          }
+        }
+        .minus {
+          visibility: visible;
+        }
+        .plus {
+          visibility: hidden;
+        }
+
+        .panel {
+          height: 100px;
+          margin-top: 30px;
+
+          visibility: visible;
+        }
+      }
+      .schedule {
+        outline: none;
+        border: 1px solid rgb(241, 239, 239);
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        text-align: start;
+        letter-spacing: 1px;
+
+        position: relative;
+        transition: 0.3s;
+        font-weight: 500;
+
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+          transition: 0.2s;
+          .minus {
+            visibility: visible;
+            transition: 0.2s;
+            color: white;
+          }
+          .plus {
+            visibility: hidden;
+            transition: 0.2s;
+          }
+          span {
+            color: white;
+          }
+        }
+        .schedule-text {
+          margin-left: 20px;
+          font-size: 12px;
+          color: rgb(29, 29, 29);
+
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .panel {
+        transition: 0.8s;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+
+        font-family: Lora, serif;
+        line-height: 1.6em;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .minus {
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        visibility: hidden;
+        transition: 0.2s;
+      }
+      .plus {
+        visibility: visible;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  .acc-line {
+    p {
+      width: 100%;
+      height: 2px;
+      border-top: 1px solid rgb(231, 228, 228);
+      margin-top: 130px;
+    }
+  }
+  .tab2 {
+    margin: 100px 0 ;
+    ul {
+      padding-left: 0;
+      .acc2.active2 {
+        .schedule2 {
+          .schedule-text2 {
+            color: $primary-color;
+          }
+        }
+        .minus2 {
+          visibility: visible;
+        }
+        .plus2 {
+          visibility: hidden;
+        }
+
+        .panel2 {
+          height: 100px;
+          margin-top: 30px;
+
+          visibility: visible;
+        }
+      }
+      .schedule2 {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgb(241, 239, 239);
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        text-align: start;
+        letter-spacing: 1px;
+
+        position: relative;
+        transition: 0.3s;
+        font-weight: 500;
+
+        &:hover {
+          color: $primary-color;
+
+          .minus2 {
+            visibility: visible;
+            transition: 0.5s;
+            color: $primary-color;
+          }
+          .plus2 {
+            visibility: hidden;
+            transition: all .3s;
+          }
+          span {
+            color: $primary-color;
+          }
+        }
+        .schedule-text2 {
+          margin-left: 20px;
+          font-size: 12px;
+          color: rgb(29, 29, 29);
+
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .panel2 {
+        transition: 0.8s;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+
+        font-family: Lora, serif;
+        line-height: 1.6em;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .minus2 {
+        position: absolute;
+        top: 19px;
+        left: 20px;
+
+        transition: 0.1s;
+      }
+      .plus2 {
+        visibility: visible;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+@media only screen and (max-width:1024px) {
+.accordion{
+  .tab{
+    ul{
+       .schedule{
+    width: 80%;
+    
+  }
+    }
+   
+  }
+  .tab2{
+    ul{
+       .schedule2{
+    width: 80%;
+    
+  }
+    }
+   
+  }
+}
+
+}
