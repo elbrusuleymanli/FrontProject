@@ -2013,50 +2013,134 @@ li {
   text-align: start;
 }
 
-.prog .container ul {
-  margin-top: 200px;
+.prog .bar {
+  margin-top: 100px;
 }
 
-.prog .container ul li span {
+.prog .bar .container ul li {
+  margin-top: 15px;
+}
+
+.prog .bar .container ul li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #2b2b2b;
+  font-family: "Playfair Display",serif;
+  font-weight: 400;
+  font-size: 23px;
 }
 
-.prog .container ul li .loading {
-  width: 450px;
-}
-
-.prog .container ul li .loading .download-prog {
+.prog .bar .container ul li .loading {
   position: relative;
+}
+
+.prog .bar .container ul li .loading .download-prog {
   width: 100%;
   height: 3px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #ece2e2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 10px;
 }
 
-.prog .container ul li .loading .download-prog .download-prog-bar {
-  position: relative;
+.prog .bar .container ul li .loading .download-prog .download-prog-bar {
   width: 0%;
   height: 3px;
-  background-color: #e0dcdc;
+  background-color: #f34f3f;
 }
 
-.prog .container ul li .loading .percentage {
-  background-color: #d9290b;
-  border-radius: 15px;
-  height: 20px;
+.prog .bar .container ul li .loading .download-prog .download-prog-bar2 {
+  width: 0%;
+  height: 3px;
+  background-color: #f34f3f;
+}
+
+.prog .bar .container ul li .loading .download-prog .download-prog-bar3 {
+  width: 0%;
+  height: 3px;
+  background-color: #f34f3f;
+}
+
+.prog .bar .container ul li .loading .percentage {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 0.8rem;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  top: -30px;
+  right: 0;
+}
+
+.prog .bar .container ul li .loading .percentage2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  top: -30px;
+  right: 0;
+}
+
+.prog .bar .container ul li .loading .percentage3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  top: -30px;
+  right: 0;
+}
+
+.prog .bar .prog-line p {
+  width: 100%;
+  height: 2px;
+  border-top: 1px solid #e7e4e4;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.tabses .tab-topic {
+  background-color: #f3ebeb;
+  padding: 0;
+}
+
+.tabses .tab-topic h1 {
+  color: black;
+  font-family: "Playfair Display", serif;
+  padding: 80px 0;
+  font-weight: 400;
+}
+
+.tabses .taabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.tabses .taabs ul .t {
+  border: 1px solid #dfd1d1;
+  border-bottom: none;
+  width: 140px;
+  height: 50px;
   text-align: center;
-  float: left;
-  line-height: 20px !important;
-  margin: 0 0 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.tabses .taabs .tab-text p {
+  border: 1px solid #d8d4d4;
+  padding: 60px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
