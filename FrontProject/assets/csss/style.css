@@ -2099,31 +2099,51 @@ li {
   margin-bottom: 100px;
 }
 
-.tabses .tab-topic {
-  background-color: #f3ebeb;
-  padding: 0;
+.section {
+  padding: 120px 0;
 }
 
-.tabses .tab-topic h1 {
+.tab-topic {
+  width: 100%;
+  height: 225px;
+  background-color: #fafaf9;
+  z-index: 1;
+}
+
+.tab-topic h1 {
   color: black;
   font-family: "Playfair Display", serif;
   padding: 80px 0;
   font-weight: 400;
 }
 
-.tabses .taabs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
+#tab-tab {
+  border: none;
+  height: 300px;
 }
 
-.tabses .taabs ul .t {
-  border: 1px solid #dfd1d1;
-  border-bottom: none;
-  width: 140px;
-  height: 50px;
+#tab-tab .ui-tabs-active {
+  background-color: #f34f3f;
+  color: white;
+}
+
+#tab-tab ul {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-right: none;
+  background-color: transparent;
+}
+
+#tab-tab ul li {
+  height: 55px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid #eee;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2134,13 +2154,16 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 13px;
-  letter-spacing: 1px;
 }
 
-.tabses .taabs .tab-text p {
-  border: 1px solid #d8d4d4;
-  padding: 60px;
-  font-size: 15px;
+#tab-tab ul li a {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#tab-tab .ui-tabs-panel {
+  border: 1px solid #e4e3e3;
+  padding: 75px 47px;
 }
 /*# sourceMappingURL=style.css.map */
