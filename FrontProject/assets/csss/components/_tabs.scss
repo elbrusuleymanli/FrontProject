@@ -4,10 +4,8 @@
 
 .tab-topic {
   width: 100%;
-
   height: 225px;
   background-color: #fafaf9;
-
   z-index: 1;
   h1 {
     color: black;
@@ -17,7 +15,7 @@
   }
 }
 
-#tab-tab {
+#tabs {
   border: none;
   height: 300px;
 
@@ -29,33 +27,338 @@
     padding: 0;
     margin: 0;
     border: none;
-    border-right: none;
+
     background-color: transparent;
 
     li {
-      height: 55px;
-      width: 150px;
+      height: 50px;
+      width: 155px;
       background-color: white;
       border: 1px solid #eee;
       text-align: center;
       margin: 0;
       padding: 0;
-
-      text-transform: uppercase;
-      text-align: center;
       align-items: center;
       display: flex;
       justify-content: center;
-      a {
-        text-align: center;
+      border-bottom: none;
 
+      a {
+        font-size: 13px;
+        letter-spacing: 1px;
         margin: 0;
-        padding: 0;
+        padding: 15px 55px;
+       
       }
     }
   }
   .ui-tabs-panel {
     border: 1px solid rgb(228, 227, 227);
-    padding: 75px 47px;
+    padding: 55px 45px;
+    p {
+      color: grey;
+    }
   }
 }
+#tabs-right {
+  border: none;
+  .ui-tabs-active {
+    background-color: $primary-color;
+    color: white;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    background-color: transparent;
+
+    li {
+      height: 50px;
+      width: 155px;
+
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      background-color: rgb(241, 241, 241);
+      border: none;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      a {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 0;
+        padding: 15px 55px;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .ui-tabs-panel {
+    border: 1px solid rgb(228, 227, 227);
+    padding: 55px 45px;
+    p {
+      color: grey;
+      overflow: hidden;
+    }
+  }
+}
+.prog-line {
+    p {
+      width: 100%;
+      height: 2px;
+      border-top: 1px solid rgb(231, 228, 228);
+      margin-bottom: 100px;
+    }
+  }
+  #full-tabs{
+      border: none;
+    .ui-tabs-active {
+       
+        a{
+            color: $primary-color;
+        }
+      }
+      ul {
+        padding: 0;
+  
+        border: none;
+       display: flex;
+        background-color: transparent;
+    
+        li {
+          height: 50px;
+          width: 155px;
+    
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        background-color: transparent;
+        position: relative;
+          border: none;
+    
+        
+    
+          a {
+            font-size: 13px;
+            letter-spacing: 1.2px;
+            position: absolute;
+            top: 0;
+            left: -7px;
+           
+          }
+        }
+      }
+      .ui-tabs-panel {
+        border: 1px solid rgb(228, 227, 227);
+        border-left: none;
+        border-right: none;
+        padding: 55px 0px;
+        margin-bottom: 100px;
+        p {
+          color: grey;
+          overflow: hidden;
+        }
+      }
+  }
+  .ui-tabs-vertical {
+    width: 100%;
+   .ui-tabs-nav {
+    padding: .2em .1em .2em .2em;
+    float: left;
+    width: 12em;
+  
+  li {
+    clear: left;
+    width: 100%;
+    border-bottom-width: 1px ;
+    border-right-width: 0 ;
+    margin: 0 -1px .2em 0;
+  } 
+  a {
+    display: block;
+  }
+}
+  }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active{
+    padding-bottom: 0;
+    padding-right: .1em;
+    border-right-width: 1px;
+  }
+  .ui-tabs-vertical .ui-tabs-panel {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 155px);
+    padding: 13px 32px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+  }
+  #last-tab{
+    display: flex;
+    border: none;
+    margin-bottom: 100px;
+    ul {
+      background-color: white;
+      border: none;
+      padding: 0;
+      li {
+        width: 100%;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: -1px;
+        
+      
+        a{
+          padding: 20px 15px;
+          width: 100%;
+          text-align: center;
+          font-size: 13px;
+          letter-spacing: 1px;
+          &:hover{
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+      }
+    }
+  
+    .ui-tabs-active {
+      border: 1px solid rgb(212, 208, 208) ;
+      color: white;
+      background-color: $primary-color;
+      
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 1024px){
+    #tabs{
+        height: 400px;
+        overflow-x: hidden;
+        border: none;
+        ul{
+            li{
+                height: 30px;
+                width: 120px;
+               
+            }
+        }
+        .ui-tabs-panel {
+            border: 1px solid rgb(228, 227, 227);
+        
+            p {
+              color: grey;
+              width: 300px;
+              text-align: justify;
+            }
+    }
+    }
+    #tabs-right{
+        height: 400px;
+        overflow-x: hidden;
+       
+        ul{
+            li{
+                height: 30px;
+                width: 120px;
+               
+        }
+        .ui-tabs-panel {
+            border: 1px solid rgb(228, 227, 227);
+        
+            p {
+              color: grey;
+              width: 300px;
+              text-align: justify;
+            }
+    }
+}}}
+@media only screen and (max-width: 375px){
+    #tabs{
+        height: 400px;
+        overflow: hidden;
+        border: none;
+      
+        ul{
+          
+            li{
+                height: 30px;
+                width: 80px;
+                border-bottom: 1px solid;
+                
+                
+                a{
+                      font-size: 10px;
+                }
+            }
+        }
+        .ui-tabs-panel {
+            border: 1px solid rgb(228, 227, 227);
+            padding: 20px;
+            p {
+              color: grey;
+              width: 300px;
+              text-align: left;
+              font-size: 8px;
+              
+            }
+    }
+    }
+    #tabs-right{
+        height: 400px;
+        overflow-x: hidden;
+       
+        ul{
+            li{
+                height: 30px;
+                width: 80px;
+               
+            }
+        }
+        .ui-tabs-panel {
+            border: 1px solid rgb(228, 227, 227);
+            padding: 20px;
+        
+            p {
+              color: grey;
+         
+              text-align:start;
+              font-size: 8px;
+            }
+    }
+  }}
+  #last-tab{
+    display: block;
+    
+    text-align: center;
+ ul{
+   
+   
+   li{
+display: flex;
+   align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+ }
+ 
+ 
+ 
+  }
+  .ui-tabs-vertical .ui-tabs-panel{
+    width: 100%;
+  }
