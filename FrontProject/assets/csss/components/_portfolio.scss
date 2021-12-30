@@ -23,12 +23,15 @@
 
     .item {
       margin-top: 20px;
-
+    
       &:hover {
-        img {
+        .img-box{ overflow: hidden;
+ img {
           transform: scale(1.03);
           transition: all 0.3s;
         }
+        }
+       
 
         .addToCart {
           visibility: visible;
@@ -51,16 +54,17 @@
 
     .img-box {
       position: relative;
-      overflow: hidden;
+     
       margin-bottom: 10px;
       height: 100%;
-      width: 100%;
+      width: 100%; 
       img {
         z-index: 2;
         transition: all 0.3s ease;
         height: auto;
         width: 100%;
         padding: 20px;
+       transform: scale(1);
       }
     }
 

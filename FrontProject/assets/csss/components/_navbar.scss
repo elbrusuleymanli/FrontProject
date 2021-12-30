@@ -459,6 +459,7 @@ z-index: 4;
     }
   }
   .cart {
+    
     ul {
       display: flex;
       position: relative;
@@ -497,12 +498,35 @@ z-index: 4;
           i {
             font-size: 20px;
             transition: 0.2s;
+            
           }
         }
      
        
      
       }
+    }
+  }
+  .search-place{
+    background-color: white;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size:12px ;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    right: 250px;
+    display: none;
+    
+    span{
+margin: 10px;
+
+    }
+    i{
+      margin: 10px;
+      margin-left: 80px;
     }
   }
 }
