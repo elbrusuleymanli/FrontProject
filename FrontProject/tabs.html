@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,6 +22,358 @@
 </head>
 
 <body>
+
+  <header>
+    <!-- mobile version  -->
+    <div id="mobile-version" class="mob-ver d-xl-none">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="mob-ver-list reset-li">
+        <li>
+          <button class="dropdown-btn">Home
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Main Home</a>
+            <a href="#">Grid Home</a>
+            <a href="#">Flower Shop</a>
+            <a href="#">Animated Slider</a>
+            <a href="#">Metro Showcase</a>
+            <a href="#">Carousel Showcase</a>
+            <a href="#">Landing</a>
+
+          </div>
+        </li>
+        <li>
+          <button class="dropdown-btn">Pages
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">About Us</a>
+            <a href="#">FAG Page</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </li>
+        <li>
+          <button class="dropdown-btn">Shop
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <button class="dropdown-btn">Product Types
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Pages
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Types
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+            <button class="dropdown-btn">Shop Layouts
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+              <a href="#">Variable Product</a>
+              <a href="#">Standart Product</a>
+              <a href="#">Groupped Product</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="dropdown-btn">Portfolio
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">About Us</a>
+            <a href="#">FAG Page</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </li>
+        <li>
+          <button class="dropdown-btn">Blog
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">About Us</a>
+            <a href="#">FAG Page</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </li>
+        <li>
+          <button class="dropdown-btn">Elements
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">About Us</a>
+            <a href="#">FAG Page</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section id="header aos">
+      <div class="header">
+        <div class="nav" style="padding-bottom: 0;">
+
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="logo">
+                  <a href="">
+                    <img src="assets/image/logo.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="menu">
+                  <ul>
+                    <li><a class="menu-home" href=""><span>HOME</span> </a>
+                      <div class="home">
+                        <ul>
+                          <li><a href=""><span>Main Home</span> </a></li>
+                          <li><a href=""><span>Grid Home</span> </a></li>
+                          <li><a href=""><span>Flower Shop</span> </a></li>
+                          <li><a href=""><span>Animated Slider</span> </a></li>
+                          <li><a href=""><span>Metro Showcase</span> </a></li>
+                          <li><a href=""><span>Carousel Showcase</span> </a></li>
+                          <li><a href=""><span>Landing</span> </a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href=""><span>PAGES</span></a>
+                      <div class="page">
+                        <ul>
+                          <li><a href="">About Us</a></li>
+                          <li><a href="">FAQ Page</a></li>
+                          <li><a href="">Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li> <a href=""><span>SHOP</span> </a>
+                      <div class="shop">
+
+                        <ul>
+                          <li>Product Types</li>
+                          <li><a href="">Standart Product </a></li>
+                          <li><a href="">Grouped Product </a></li>
+                          <li><a href="">Variable Product</a></li>
+                          <li><a href="">Virtual Product</a></li>
+                          <li><a href="">External Product</a></li>
+                          <li><a href="">Downloadable Product</a></li>
+                          <li><a href="">On Sale Product</a></li>
+                          <li><a href="">Out Of Stock Product</a></li>
+                          <li><a href="">New Product</a></li>
+                        </ul>
+                        <ul>
+                          <li>Shop Pages</li>
+                          <li><a href="">My Account</a></li>
+                          <li><a href="">Cart</a></li>
+                          <li><a href="">Checkout</a></li>
+                          <li><a href="">Orders</a></li>
+                          <li><a href="">Downloads</a></li>
+                        </ul>
+                        <ul>
+                          <li>Shop Types</li>
+                          <li><a href="">Product List</a></li>
+                          <li><a href="">Without Sidebar</a></li>
+                          <li><a href="">With Category Filter</a></li>
+                          <li><a href="">With Ordering Filter</a></li>
+                          <li><a href="">Shop Carousel</a></li>
+                          <li><a href="">Product Categories</a></li>
+                          <li><a href="">Single Category</a></li>
+                        </ul>
+                        <ul>
+                          <li>Shop Layouts</li>
+                          <li><a href="">Two Colums Grid</a></li>
+                          <li><a href="">Three Colums Grid</a></li>
+                          <li><a href="">Four Colums Grid</a></li>
+                          <li><a href="">Four Colums Wide</a></li>
+                          <li><a href="">Five Colums Wide</a></li>
+                          <li><a href="">Six Colums Wide</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href=""><span>PORTFOLIO</span> </a>
+                      <div class="portfolio">
+                        <ul>
+                          <li><a href="">Standart</a></li>
+                          <li><a href="">Gallery</a></li>
+                          <li><a href="">Masonry</a></li>
+                          <li><a href="">Portfolio Layouts</a>
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="extra-col">
+                              <ul>
+                                <li><a href="">Two Columns</a></li>
+                                <li><a href="">Three Columns</a></li>
+                                <li><a href="">Four Columns</a></li>
+                                <li><a href="">Four Columns Wide</a></li>
+                                <li><a href="">Five Columns Wide</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href="">Portfolio Single</a>
+                            <i class="fas fa-chevron-right short"></i>
+                            <div class="extra-col2">
+                              <ul>
+                                <li><a href="">Small Images</a></li>
+                                <li><a href="">Small Slider</a></li>
+                                <li><a href="">Big Images</a></li>
+                                <li><a href="">Big Slider</a></li>
+                                <li><a href="">Gallery</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href=""><span>BLOG</span> </a>
+                      <div class="blog">
+                        <ul>
+                          <li><a href="">Masonry</a></li>
+                          <li><a href="">Standard</a></li>
+                          <li><a href="">Post Types</a>
+                            <i class="fas fa-chevron-right"></i>
+
+                            <div class="post-extra">
+                              <ul>
+                                <li><a href="">Standard</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Link</a></li>
+                                <li><a href="">Quote</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Video</a></li>
+                              </ul>
+
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href=""><span>ELEMENTS</span> </a>
+                      <div class="element">
+                        <ul>
+                          <li><a href="">Classic</a><i class="fas fa-chevron-right"></i>
+                            <div class="item">
+                              <ul>
+                                <li><a href="">Accordions</a></li>
+                                <li><a href="">Tabs</a></li>
+                                <li><a href="">Buttons</a></li>
+                                <li><a href="">Video Button</a></li>
+                                <li><a href="">Contact Form</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li> <a href="">Infographic</a><i class="fas fa-chevron-right"></i>
+                            <div class="item">
+                              <ul>
+                                <li><a href="">Blog List</a></li>
+                                <li><a href="">Counters</a></li>
+                                <li><a href="">Countdown</a></li>
+                                <li><a href="">Google Maps</a></li>
+                                <li><a href="">Progress Bar</a></li>
+                                <li><a href="">Pie Charts</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href="">Interactive</a><i class="fas fa-chevron-right"></i>
+                            <div class="item">
+                              <ul>
+                                <li><a href="">Image Gallery</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Team</a></li>
+                                <li><a href="">Banner</a></li>
+                                <li><a href="">Shop List</a></li>
+                                <li><a href="">Portfolio List</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href="">Typography</a><i class="fas fa-chevron-right"></i>
+                            <div class="item">
+                              <ul>
+                                <li><a href="">Headings</a></li>
+                                <li><a href="">Columns</a></li>
+                                <li><a href="">Section Title</a></li>
+                                <li><a href="">Blockquote</a></li>
+                                <li><a href="">Dropcaps</a></li>
+                                <li><a href="">Highlights</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="col-lg-3">
+                <div class="cart">
+                  <ul>
+                    <li><a href=""><i class="fas fa-search search-item "></i></a></li>
+                    <li><a href=""><i class="fas fa-shopping-bag bag"></i>
+                        <span class="countProduct">0</span></a></li>
+                    <li><a href=""> CART</a>
+                      <span>($</span>
+                      <span class="totalPrice">0</span>
+                      <span>)</span>
+
+                    </li>
+
+                  </ul>
+                  <div class="search-place">
+                    <span>Search</span>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- mobile token  -->
+              <div class="sidebar-button d-xl-none" style="position: relative;">
+                <i onclick="openNav()" style="position: absolute;
+                top: -19px;
+                right: 60px;" class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
   <section class=" tab-topic">
     <div class="">
       <div class="container">
@@ -56,14 +408,14 @@
                 varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
                 ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus. Curabitur
                 ullamcorper ultricies nisi. Nam eget dui.vulputate eget,arcu. In enim justo, rhoncus ut.</p>
-                
+
             </div>
             <div id="tabs-3">
               <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
                 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
                 adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar. Aenean vulputate eleifend
                 tellus. Aenean leo ligula, porttitor eu. Aliquam lorem ante, dapibusin, viverra quis, feugiat a.</p>
-                
+
 
             </div>
           </div>
@@ -96,77 +448,113 @@
             </div>
           </div>
         </div>
-       
+
       </div>
     </div>
   </section>
- <div class="prog-line">
-          <p></p>
-        </div>
-        <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div id="full-tabs">
-                  <ul>
-                    <li><a href="#tabs-1">SERVICES</a></li>
-                    <li><a href="#tabs-2">SHOP</a></li>
-                    <li><a href="#tabs-3">PRODUCT</a></li>
-                  </ul>
-                  <div id="tabs-1">
-                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                      massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-                      felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. Aenean imperdiet. Etiam
-                      ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-                  </div>
-                  <div id="tabs-2">
-                    <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
-                      varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                      ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus. Curabitur
-                      ullamcorper ultricies nisi. Nam eget dui.vulputate eget,arcu. In enim justo, rhoncus ut.</p>
-                      
-                  </div>
-                  <div id="tabs-3">
-                    <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-                      Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-                      adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar. Aenean vulputate eleifend
-                      tellus. Aenean leo ligula, porttitor eu. Aliquam lorem ante, dapibusin, viverra quis, feugiat a.</p>
-                      
-      
-                  </div>
-                </div>
-              </div>
+  <div class="prog-line">
+    <p></p>
+  </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="full-tabs">
+            <ul>
+              <li><a href="#tabs-1">SERVICES</a></li>
+              <li><a href="#tabs-2">SHOP</a></li>
+              <li><a href="#tabs-3">PRODUCT</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa. Aenean imperdiet. Etiam
+                ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+            </div>
+            <div id="tabs-2">
+              <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+                varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus. Curabitur
+                ullamcorper ultricies nisi. Nam eget dui.vulputate eget,arcu. In enim justo, rhoncus ut.</p>
+
+            </div>
+            <div id="tabs-3">
+              <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar. Aenean vulputate eleifend
+                tellus. Aenean leo ligula, porttitor eu. Aliquam lorem ante, dapibusin, viverra quis, feugiat a.</p>
+
+
             </div>
           </div>
-        </section>
-        <div class="prog-line">
-          <p></p>
         </div>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-          <div id="last-tab">
-              <ul>
-                <li><a href="#tabs-1">PRODUCT</a></li>
-                <li><a href="#tabs-2">SHOP</a></li>
-                <li><a href="#tabs-3">SERVICE</a></li>
-              </ul>
-              <div id="tabs-1">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Class aptent taciti sociosqu ad litora. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
-              </div>
-              <div id="tabs-2">
-                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-              </div>
-              <div id="tabs-3">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-              </div>
-            </div>
       </div>
+    </div>
+  </section>
+  <div class="prog-line">
+    <p></p>
   </div>
-  </div>
-  
-</section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="last-tab">
+            <ul>
+              <li><a href="#tabs-1">PRODUCT</a></li>
+              <li><a href="#tabs-2">SHOP</a></li>
+              <li><a href="#tabs-3">SERVICE</a></li>
+            </ul>
+            <div id="tabs-1">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                Class aptent taciti sociosqu ad litora. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.Maecenas nec odio et ante tincidunt tempus.
+                Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
+                consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce
+                vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+            </div>
+            <div id="tabs-2">
+              <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+                sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
+                eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
+                magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
+                libero. Fusce vulputate eleifend sapien. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
+                ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+                Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Vestibulum purus quam, scelerisque
+                ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit
+                fringilla. Vestibulum ante ipsum primis in. Nullam dictum felis eu pede mollis pretium. Integer
+                tincidunt. Cras dapibus.</p>
+            </div>
+            <div id="tabs-3">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas
+                nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+                Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+                sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida
+                magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed,
+                nonummy id, metus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+                ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+                feugiat a, tellus. Phasellus viverra nulla ut metus varius. Aenean vulputate eleifend tellus. Aenean leo
+                ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <footer id="aos">
     <div class="content">
       <div class="content-info">
@@ -249,14 +637,20 @@
       </div>
     </div>
   </footer>
-
+  <!-- scroll -->
+  <div class="scroll">
+    <a class="scroll-up" href="">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-  
+
 
   <script src="/assets/csss/js/tabs.js"></script>
+  <script src="/assets/csss/js/main.js"></script>
 </body>
 
 </html>

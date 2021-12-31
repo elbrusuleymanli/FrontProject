@@ -125,9 +125,9 @@ buttons.forEach((btn) => {
       localStorage.setItem("basket", JSON.stringify([]));
     }
     let basket = JSON.parse(localStorage.getItem("basket"));
-    let price = this.parentElement.children[0].innerText;
-    let name = this.parentElement.children[0].innerText;
-    let image = this.parentElement.previousElementSibling.src;
+    let price = this.parentElement.children[2].innerText;
+    let name = this.parentElement.previousElementSibling.innerText;
+    let image = e.target.parentElement.parentElement.children[1].nextElementSibling.src;
     let dataId = this.getAttribute("data-id");
 
     let existProd = basket.find((p) => p.dataId == dataId);
@@ -175,15 +175,84 @@ function totalPrice() {
 }
 totalPrice();
 let row = document.querySelector(".row");
+if (
+  localStorage.getItem("basket") === null ||
+  localStorage.getItem("basket") == "[]"
+) {
+  localStorage.setItem("basket", JSON.stringify([]));
+  let div = document.createElement("div");
+  let p = document.createElement("p");
 
+ 
 
-//sidenav
+  
+  div.appendChild(p);
+  row.append(div);
+  // dropdown.append(p)
+} else {
+  let basket = JSON.parse(localStorage.getItem("basket"));
+
+  basket.forEach((p) => {
+    let div = document.createElement("div");
+    let image = document.createElement("img");
+    let pCount = document.createElement("p");
+    let pPrice = document.createElement("p");
+    let pModel = document.createElement("p");
+    let del = document.createElement("button");
+    
+   
+    
+    del.className = "btn btn-danger ";
+    pModel.style.fontWeight="bold" 
+    pPrice.style.color="red"
+    pPrice.style.marginLeft="10px"
+    image.style.width = "110px";
+    pCount.style.textAlign="center"
+    pModel.style.marginLeft="10px"
+
+    div.style.backgroundColor="#dfdfdf"
+    div.style.width="450px"
+    div.style.display="flex"
+    div.style.padding="30px"
+    del.style.marginLeft="15px"
+    del.style.marginBottom = "10px";
+    image.src = p.image;
+
+    pCount.innerText = "Count: " + p.count;
+    pModel.innerText = "Model: " + p.model;
+    pPrice.innerText = "Price: " + p.price * p.count + "$";
+    del.innerText = "Delete";
+ 
+    
+
+    div.append(image, pModel, pCount, pPrice, del);
+  
+    // dropdown.append(div);
+   
+    del.addEventListener("click", function (e) {
+        e.preventDefault();
+     
+      if (p.count == 1) {
+        div.remove(this.image, this.pModel, this.pCount, this.pPrice, this.del);
+      } else {
+        p.count--;
+        pCount.innerText = "Count: " + p.count;
+        pPrice.innerText = "Price: " + p.price * p.count + "$";
+       
+      }
+     
+    });
+     
+  });
+}
+
+//mobile-version
 function openNav() {
-	document.getElementById("mySidenav").style.width = "400px";
+	document.getElementById("mobile-version").style.width = "400px";
   }
   
   function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("mobile-version").style.width = "0";
   }
 
   var dropdown = document.getElementsByClassName("dropdown-btn");
